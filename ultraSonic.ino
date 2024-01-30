@@ -24,7 +24,7 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
 
   // Convert the time into a distance
-  distanceCm = duration / 2 / 29.1; // Divide by 29.1 to get distance in cm
+  distanceCm = (duration / 2 )/ 29.1; // Divide by 29.1 to get distance in cm
 
   // Print the distance in centimeters
   Serial.print(distanceCm);
