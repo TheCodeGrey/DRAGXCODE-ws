@@ -18,8 +18,6 @@ void loop() {
   float humi  = dht.readHumidity();
   // read temperature as Celsius
   float tempC = dht.readTemperature();
-  // read temperature as Fahrenheit
-  float tempF = dht.readTemperature(true);
 
   // check if any reads failed
   if (isnan(humi) || isnan(tempC) || isnan(tempF)) {
