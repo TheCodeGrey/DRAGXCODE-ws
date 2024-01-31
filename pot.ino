@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   potValue = analogRead(potPin);             // Read the potentiometer value
-  throttle = map(potValue, 0, 1023, 0, 100); // Map the pot value to a PWM value (0-255)
+  throttle = map(potValue, 0, 1023, 0, 100); // Map the pot value to a throttle value 0-100%
 
   // Always display the PWM value
   Serial.print("throttle at: ");
